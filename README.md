@@ -8,9 +8,9 @@ To get more information, check out https://github.com/nhnghia/schora.
 
 ## Contributors
 
-**Huu Nghia Nguyen, Paris Sud University and LRI**
+**Huu Nghia Nguyen**, Paris Sud University and LRI
 
-- <http://twitter.com/nhnghia>
+- <http://twitter.com/huunghia>
 - <http://github.com/nhnghia>
 
 **Pascal Poizat**, Paris Ouest University and LIP6
