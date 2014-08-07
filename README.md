@@ -36,7 +36,7 @@ $ java -cp $Z3_HOME/bin/com.microsoft.z3.jar:. JavaExample
 
 ### EMF
 
-To have EMF library, install Eclipse (http//www.eclipse.org) and add the plugins directory to your classpath when you want to compile or run an EMF related program.
+To have EMF library, install Eclipse (http://www.eclipse.org) and add the plugins directory to your classpath when you want to compile or run an EMF related program.
 
 ## License
 
