@@ -40,4 +40,4 @@ To have EMF library, install Eclipse (http://www.eclipse.org) and add the plugin
 
 ## License
 
-Code released under the [GPL v2](LICENSE).
+SChorA code is released under the [GPL v2](LICENSE).
