@@ -1,10 +1,22 @@
-SChorA
-======
+# [SChorA]()
 
-SchorA is a tool to analyze choreography specifications by using symbolics, based on  [Z3 SMT solver](http://rise4fun.com/z3), rather than using concrete data value. The mains features are: 
-- Check the conformance of two models (one for specification and another for implementation) based on the branching bisimulation equivalence.
-- Check the realizability of a choreography specification.
-- Generate local specifications from a global one.
-- Generate Symbolic Transition Graph of a model specification.
+SChorA (Symbolic Choreography Analysis) is a framework for the symbolic analysis of choreographies.
 
-For further information and trying the tool online, please refer to: http://schora.lri.fr
+It is forked from https://github.com/nhnghia/schora.
+To get more information, check out https://github.com/nhnghia/schora. 
+
+## Contributors
+
+**Huu Nghia Nguyen, Paris Sud University and LRI**
+
+- <http://twitter.com/nhnghia>
+- <http://github.com/nhnghia>
+
+**Pascal Poizat**, Paris Ouest University and LIP6
+
+- <http://twitter.com/pascalpoizat>
+- <http://github.com/pascalpoizat>
+
+## License
+
+Code released under the [GPL v2](LICENSE).
