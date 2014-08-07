@@ -3,6 +3,7 @@
 SChorA (Symbolic Choreography Analysis) is a framework for the symbolic analysis of choreographies.
 
 It is forked from https://github.com/nhnghia/schora.
+
 To get more information, check out https://github.com/nhnghia/schora. 
 
 ## Contributors
