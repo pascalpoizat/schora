@@ -27,7 +27,7 @@ Z3 is available at http://z3.codeplex.com/.
 - add `$Z3_HOME/bin/com.microsoft.z3.jar` in your classpath when you want to compile or run a Z3 related program
 - add `$Z3_HOME/bin` to your dynamic library path (LD_LIBRARY_PATH on Linux, DYLD_LIBRARY_PATH on OSX)
 
-To check all is ok you can get `try with the example file here: http://z3.codeplex.com/SourceControl/latest#examples/java/JavaExample.java
+To check all is ok you can try with the example file here: http://z3.codeplex.com/SourceControl/latest#examples/java/JavaExample.java
 ```
 $ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$Z3_HOME/bin
 $ javac -cp $Z3_HOME/bin/com.microsoft.z3.jar JavaExample.java 
