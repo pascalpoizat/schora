@@ -20,11 +20,10 @@ It is forked from https://github.com/nhnghia/schora.
 
 ### Z3
 
-Z3 is available at http://z3.codeplex.com/:
+Z3 is available at http://z3.codeplex.com/.
+<!--
 - download the night build for your platform (scroll down in the page)
 - save it and uncompress it in some place, say `$Z3_HOME` 
-
-<!--
 - add `$Z3_HOME/bin/com.microsoft.z3.jar` in your classpath when you want to compile or run a Z3 related program
 - add `$Z3_HOME/bin` to your dynamic library path (LD_LIBRARY_PATH on Linux, DYLD_LIBRARY_PATH on OSX)
 
