@@ -15,7 +15,19 @@ package fr.lri.schora.solver;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.microsoft.z3.*;
+// With the Z3 Java API
+//import com.microsoft.z3.*;
+// With the SMT Java API
+import xsmt.command.Assert;
+import xsmt.command.Check_sat;
+import xsmt.command.Declare_fun;
+import xsmt.command.Define_fun;
+import xsmt.command.Pop;
+import xsmt.command.Push;
+import xsmt.command.Set_option;
+import xsmt.expression.Expression;
+import xsmt.response.IResponse;
+import xsmt.solver.z3.Z3Solver;
 
 import fr.lri.schora.expr.Condition;
 import fr.lri.schora.expr.Constance;
@@ -77,7 +89,7 @@ public class Z3SMT {
 		
 		//Define fun corresponds to the condition
 		String fun_name = "func" + (++funIndex);
-		
+
 		Define_fun fun = new Define_fun(fun_name, "Bool", con.toZ3Format(), new ArrayList<String>());
 		z3Solver.execute(fun);
 		
