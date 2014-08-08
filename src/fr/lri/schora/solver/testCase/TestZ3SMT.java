@@ -22,12 +22,15 @@ import fr.lri.schora.solver.Z3SMT;
 
 public class TestZ3SMT {
 
+    // public static final String Z3_PATH = "/Users/nhnghia/soft/z3/bin/z3";
+    public static final String Z3_PATH = "/Users/pascalpoizat/Documents/Applications/Downloads/z3/bin/z3";
+
 	@Test
 	public void test() throws Exception {
 		String str = "x*x+1>0 and x-x <3";
 		Condition con = BoolExpression.parser(str);
 		System.out.println(con.toString());
-		Z3SMT z3 = new Z3SMT("/Users/nhnghia/soft/z3/bin/z3");
+		Z3SMT z3 = new Z3SMT(Z3_PATH);
 		boolean b = z3.assertTrue(con);
 		assertTrue(b);
 	}

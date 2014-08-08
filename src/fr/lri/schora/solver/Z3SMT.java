@@ -15,16 +15,7 @@ package fr.lri.schora.solver;
 import java.util.ArrayList;
 import java.util.List;
 
-import xsmt.command.Assert;
-import xsmt.command.Check_sat;
-import xsmt.command.Declare_fun;
-import xsmt.command.Define_fun;
-import xsmt.command.Pop;
-import xsmt.command.Push;
-import xsmt.command.Set_option;
-import xsmt.expression.Expression;
-import xsmt.response.IResponse;
-import xsmt.solver.z3.Z3Solver;
+import com.microsoft.z3.*;
 
 import fr.lri.schora.expr.Condition;
 import fr.lri.schora.expr.Constance;
