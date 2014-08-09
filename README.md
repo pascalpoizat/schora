@@ -35,6 +35,10 @@ $ java -cp $Z3_HOME/bin/com.microsoft.z3.jar:. JavaExample
 ```
 -->
 
+### SMT-API
+
+This is used to call Z3 from SChorA. It can be obtained at https://github.com/pascalpoizat/smt-api.
+
 ### EMF
 
 To have EMF library, install Eclipse (http://www.eclipse.org) and add the plugins directory to your classpath when you want to compile or run an EMF related program.
