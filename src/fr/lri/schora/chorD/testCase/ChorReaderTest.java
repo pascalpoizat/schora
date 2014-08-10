@@ -31,7 +31,7 @@ public class ChorReaderTest {
 	 */
 	@Test
 	public void testChorReaderInputStream() {
-		//String str = "(skip ; [true] |>   (request!x | request[a,c]?y) ; [x >y] * (response[a,d].x)) [> cancel[d,a]!resone";
+		//String str = "(skip ; [true] |>   (request[a,d]!x | request[a,c]?y) ; [x >y] * (response[a,d].x)) [> cancel[d,a]!resone";
 		String str = "Request[c,s].x_1 ; [x_1+2 >= 5] |> LivrExp[s,c] + [x_1 <5] |> Livraison[s,c]\n ! <x>";
 		StringReader f = new StringReader(str);
 		ChorReader parser = new ChorReader(f);
