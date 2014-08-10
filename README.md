@@ -38,6 +38,7 @@ $ java -cp $Z3_HOME/bin/com.microsoft.z3.jar:. JavaExample
 ### SMT-API
 
 This is used to call Z3 from SChorA. It can be obtained at https://github.com/pascalpoizat/smt-api.
+**Note: if you plan to use the archive (`archive/schora.jar`), please note that the SMT-API jar file is included within it.**
 
 ### EMF
 
