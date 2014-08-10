@@ -42,6 +42,7 @@ public class DOT {
         for (int i = 0; i < n; i++) {
             rtr += startStates.get(i) + " -> " + endStates.get(i) + " [" + labels.get(i) + "]";
         }
+        return rtr;
     }
 
     public void print() {
