@@ -13,6 +13,7 @@
 package fr.lri.schora.stg;
 
 import fr.lri.schora.basicEvent.Event;
+import fr.lri.schora.expr.BTrue;
 import fr.lri.schora.expr.Condition;
 import fr.lri.schora.expr.ExprFactory;
 
@@ -38,6 +39,18 @@ public class Transition {
 	public String toString(){
 		return String.format("%s --[%s]-%s--> %s", source.name, guard, event, destination.name);
 	}
+
+    public String toStgFormat() {
+        Condition condition = guard;
+        String label = "";
+        if ((!(condition instanceof BTrue)) && (condition != null)) {
+            label += "[" + condition.toString() + "] ";
+        }
+        if (event != null) {
+            label += event.toDotFormat(); // same format for events in .dot and .stg files
+        }
+        return String.format("%s -> %s [label=\"%s\"]",source.name, destination.name, label);
+    }
 
 	public Condition getGuard() {
 		return guard;

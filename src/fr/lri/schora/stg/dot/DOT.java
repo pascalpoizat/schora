@@ -36,8 +36,9 @@ public class DOT {
     public String toString() {
         String rtr = "";
         int n = states.size();
-        for (int i = 0; i < n; i++)
-            rtr += String.format("%s [label=\"%s\"];\n",states.get(i),stateLabels.get(i));
+        for (int i = 0; i < n; i++) {
+            rtr += String.format("%s [label=\"%s\"];\n", states.get(i), stateLabels.get(i));
+        }
         n = startStates.size();
         for (int i = 0; i < n; i++) {
             rtr += String.format("%s -> %s [label=\"%s\"];\n",startStates.get(i),endStates.get(i),labels.get(i));

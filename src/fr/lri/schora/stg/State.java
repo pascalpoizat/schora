@@ -29,6 +29,8 @@ public class State {
 	public String toString(){
 		return String.format("%s.%s", name, label);
 	}
+
+    public String toStgFormat() { return String.format("%s [label=\"%s\"]",name,label); }
 	
 	public boolean equals(Object s){
 		if (!(s instanceof State))
