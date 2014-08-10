@@ -50,15 +50,20 @@ public class TestParser {
 	public void testDotSGT(){
 		String str;
 		try {
-			str = fr.lri.schora.util.File.readFile("bin/testCases/STG.dot");
+            // final String fileName = "bin/testCases/STG.dot";
+            //final String fileName = "/production/schora/fr/lri/schora/stg/testCase/STG.dot";
+            final String fileName = "/production/schora/fr/lri/schora/stg/testCase/Causality.stg";
+            // final String z3path = "/Users/nhnghia/soft/z3/bin/z3";
+            final String z3path = "/Users/pascalpoizat/Documents/Applications/Downloads/z3/bin/z3";
+            str = fr.lri.schora.util.File.readFile(fileName);
 			STG d = STG.parser(str);
 			System.out.println("STG");
 			System.out.println(fr.lri.schora.util.List.toString(d.states, ", "));
 			System.out.println(fr.lri.schora.util.List.toString(d.transitions, ","));
 			System.out.println(d.toDotFormat());
-			
+
 			System.out.println("Reachable");
-			Z3SMT z3Solver = new Z3SMT("/Users/nhnghia/soft/z3/bin/z3");
+            Z3SMT z3Solver = new Z3SMT(z3path);
 			STG s = d.getReachableSTG(z3Solver);
 			System.out.println(s.toDotFormat());
 			
