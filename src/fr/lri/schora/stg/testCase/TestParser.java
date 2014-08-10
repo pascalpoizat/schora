@@ -26,10 +26,12 @@ import fr.lri.schora.stg.dot.parser.*;
 
 public class TestParser {
 
-	//@Test
+	@Test
 	public void test() {
 		try{
-			String str = fr.lri.schora.util.File.readFile("bin/testCases/STG.dot");
+            // final String fileName = "bin/testCases/STG.dot";
+            final String fileName = "/production/schora/fr/lri/schora/stg/testCase/Causality.stg";
+            String str = fr.lri.schora.util.File.readFile(fileName);
 			System.out.println(str);
 			StringReader f = new StringReader(str);
 			STGReader parser = new STGReader(f);
