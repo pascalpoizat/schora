@@ -49,7 +49,7 @@ public class Transition {
         if (event != null) {
             label += event.toDotFormat(); // same format for events in .dot and .stg files
         }
-        return String.format("%s -> %s [label=\"%s\"]",source.name, destination.name, label);
+        return String.format("%s->%s [label=\"%s\"]",source.name, destination.name, label);
     }
 
 	public Condition getGuard() {

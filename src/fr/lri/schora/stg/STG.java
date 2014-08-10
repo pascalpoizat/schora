@@ -403,7 +403,7 @@ public class STG {
         HashMap<String, String> nodes = new HashMap<String, String>();
 
         String dotScript = "";
-        dotScript += "\n digraph " + name + "{";
+        dotScript += "digraph " + name + "{";
         dotScript += "\n 	rankdir = LR;";
         dotScript += "\n 	nodesep = 0.5;";
         dotScript += "\n 	margin = 0.2;";
